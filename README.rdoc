@@ -1,0 +1,23 @@
+= Rack::ErrorPage catches exceptions, ditches them, and then renders the file of your choice with a status of 500
+
+Author:: Michael Gorsuch (mailto:michael@styledbits.com)
+Copyright:: Copyright (c) 2009 Michael Gorsuch
+License:: BSD
+
+== Installation
+
+  gem install rack_errorpage
+
+== Quick Usage
+
+In config.ru, do something like so:
+
+  require 'rack_errorpage'
+
+  use Rack::BugzScout, "./public/500.html"
+
+== For Sinatra
+
+Make sure that you enable error raising to get this to work.  Example:
+
+  set :raise_errors, :true
