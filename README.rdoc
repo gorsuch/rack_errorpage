@@ -14,7 +14,7 @@ In config.ru, do something like so:
 
   require 'rack_errorpage'
 
-  use Rack::BugzScout, "./public/500.html"
+  use Rack::ErrorPage, "./public/500.html"
 
 == For Sinatra
 
