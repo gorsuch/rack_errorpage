@@ -4,7 +4,7 @@ require 'rake/gempackagetask'
 spec = Gem::Specification.new do |s|
   s.platform  =   Gem::Platform::RUBY
   s.name      =   "rack_errorpage"
-  s.version   =   "0.0.2"
+  s.version   =   "1.0.0"
   s.author    =   "Michael Gorsuch"
   s.email     =   "michael@styledbits.com"
   s.summary   =   "Simple Rack Middleware catching exceptions and rendering the error page of your choice"
